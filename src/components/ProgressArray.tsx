@@ -84,7 +84,7 @@ const styles = {
         maxWidth: '100%',
         flexWrap: 'row',
         position: 'absolute',
-        width: '98%',
+        width: '100%',
         padding: 5,
         paddingTop: 7,
         alignSelf: 'center',
