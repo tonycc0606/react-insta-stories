@@ -144,7 +144,7 @@ export default function () {
 
 const styles = {
     container: {
-        display: 'flex',
+        //display: 'flex',
         flexDirection: 'column',
         background: '#111',
         position: 'relative'
@@ -152,7 +152,7 @@ const styles = {
     overlay: {
         position: 'absolute',
         height: 'inherit',
-        width: 'inherit',
-        display: 'flex'
+        width: 'inherit'
+        //display: 'flex'
     }
 }
