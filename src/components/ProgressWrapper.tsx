@@ -9,7 +9,7 @@ const ProgressWrapper = (props: ProgressWrapperProps) => (
 
 const getProgressWrapperStyle = ({ width, pause, bufferAction }) => ({
     //width: `${width * 100}%`,
-    width: '20%',
+    width: '15%',
     opacity: pause && !bufferAction ? 0 : 1
 })
 
@@ -19,6 +19,7 @@ const styles = {
         maxWidth: '100%',
         background: '#FFFFFF',
         marginLeft: '5%',
+        marginRight: '5%',
         borderRadius: 2,
         transition: 'opacity 400ms ease-in-out'
     }
