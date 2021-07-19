@@ -118,15 +118,6 @@ export default function () {
 
     return (
         <div style={{ ...storyContainerStyles, ...styles.container, ...{ width, height } }}>
-            <ProgressContext.Provider value={{
-                bufferAction: bufferAction,
-                videoDuration: videoDuration,
-                currentId,
-                pause,
-                next
-            }}>
-                <ProgressArray />
-            </ProgressContext.Provider>
             <Story
                 action={toggleState}
                 bufferAction={bufferAction}
@@ -134,6 +125,15 @@ export default function () {
                 story={stories[currentId]}
                 getVideoDuration={getVideoDuration}
             />
+            <ProgressContext.Provider value={{
+                bufferAction: bufferAction,
+                videoDuration: videoDuration,
+                currentId,
+                pause,
+                next
+            }}>
+            <ProgressArray />
+            </ProgressContext.Provider>
             <div style={styles.overlay}>
                 <div style={{ width: '50%', zIndex: 999 }} onTouchStart={debouncePause} onTouchEnd={mouseUp('previous')} onMouseDown={debouncePause} onMouseUp={mouseUp('previous')} />
                 <div style={{ width: '50%', zIndex: 999 }} onTouchStart={debouncePause} onTouchEnd={mouseUp('next')} onMouseDown={debouncePause} onMouseUp={mouseUp('next')} />
