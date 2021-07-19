@@ -57,7 +57,7 @@ const styles: any = {
         width: "100%",
         alignItems: "center",
         justifyContent: "flex-end",
-        bottom: 0
+        marginTop: '2%'
     },
     seeMoreExpanded: {
         position: 'absolute',
