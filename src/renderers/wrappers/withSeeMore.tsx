@@ -19,8 +19,8 @@ const withSeeMore: React.FC<{
             <div
                 style={{
                     position: "absolute",
-                    margin: "auto",
-                    bottom: showMore ? 'unset' : 0,
+                    marginTop: '2%',
+                    //bottom: showMore ? 'unset' : 0,
                     zIndex: 9999,
                     width: "100%",
                     height: showMore ? '100%' : 'auto'
