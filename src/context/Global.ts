@@ -3,7 +3,7 @@ import { GlobalCtx } from '../interfaces';
 
 export const initialContext = {
 	defaultInterval: 4000,
-	width: 360,
+	width: '100%',
 	height: 640,
 };
 
