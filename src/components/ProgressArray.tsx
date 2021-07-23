@@ -72,7 +72,7 @@ export default () => {
                     count={count}
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
-                /><div>stories[i].title</div>)}
+                /><div>{stories[i].title}</div>)}
         </div>
     )
 }
