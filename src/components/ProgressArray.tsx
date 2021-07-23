@@ -67,12 +67,16 @@ export default () => {
     return (
         <div style={styles.progressArr}>
             {stories.map((_, i) =>
+                <div>
                 <Progress
                     key={i}
                     count={count}
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
-                />)}
+                />
+                             <div>{stories[i].url}</div>
+                             </div>
+                             )}
         </div>
     )
 }
