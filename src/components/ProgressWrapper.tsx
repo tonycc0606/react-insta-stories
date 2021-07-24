@@ -18,8 +18,8 @@ const styles = {
         height: 5,
         maxWidth: '100%',
         background: '#FFFFFF',
-        marginLeft: '5%',
-        marginRight: '5%',
+        //marginLeft: '5%',
+        //marginRight: '5%',
         borderRadius: 2,
         transition: 'opacity 400ms ease-in-out'
     }
