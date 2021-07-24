@@ -103,6 +103,7 @@ const styles = {
     progressText:{
         width: '100%',
         color: "#ffffff",
-        fontSize: "large"
+        fontSize: "large",
+        marginTop: '10%'
     }
 }
