@@ -67,7 +67,7 @@ export default () => {
     return (
         <div style={styles.progressArr}>
             {stories.map((_, i) =>
-                <div>
+                <div style={styles.progressContainer}>
                 <Progress
                     key={i}
                     count={count}
@@ -95,5 +95,17 @@ const styles = {
         zIndex: 99,
         bottom: 10,
         filter: 'drop-shadow(0 1px 8px #222)'
+    },
+    progressContainer:{
+        maxWidth: '100%',
+        background: '#FFFFFF',
+        marginLeft: '5%',
+        marginRight: '5%',
+        width: '18.5%'
+    },
+    progressText:{
+        width: '100%',
+        color: "#ffffff",
+        fontSize: "large"
     }
 }
