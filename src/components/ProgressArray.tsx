@@ -74,7 +74,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div>{stories[i].header.heading}</div>
+                             <div style={styles.progressText}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
