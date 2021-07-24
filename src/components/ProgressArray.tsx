@@ -89,11 +89,9 @@ const styles = {
         flexWrap: 'row',
         position: 'absolute',
         width: '100%',
-        padding: 5,
-        paddingTop: 7,
         alignSelf: 'center',
         zIndex: 99,
-        bottom: 10,
+        bottom: '10%',
         filter: 'drop-shadow(0 1px 8px #222)'
     },
     progressContainer:{
