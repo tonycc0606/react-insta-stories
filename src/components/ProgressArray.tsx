@@ -96,9 +96,9 @@ const styles = {
     },
     progressContainer:{
         maxWidth: '100%',
-        marginLeft: '2.5%',
-        marginRight: '2.5%',
-        width: '20%'
+        marginLeft: '4%',
+        marginRight: '4%',
+        width: '17%'
     },
     progressText:{
         width: '100%',
