@@ -91,7 +91,7 @@ const styles = {
         width: '100%',
         alignSelf: 'center',
         zIndex: 99,
-        bottom: '10%',
+        bottom: '5%',
         filter: 'drop-shadow(0 1px 8px #222)'
     },
     progressContainer:{
