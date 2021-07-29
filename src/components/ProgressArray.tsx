@@ -74,8 +74,8 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <a href={stories[i].header.subheading} target='_blank'><div style={styles.progressText}>{stories[i].header.heading}</div>
-                             </div></a>
+                             <a href={stories[i].header.subheading} target='_blank'><div style={styles.progressText}>{stories[i].header.heading}</div></a>
+                             </div>
                              )}
         </div>
     )
