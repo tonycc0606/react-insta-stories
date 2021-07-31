@@ -87,11 +87,11 @@ const styles = {
         justifyContent: 'center',
         maxWidth: '100%',
         flexWrap: 'row',
-        position: 'absolute',
+        position: 'relative',
         width: '100%',
         alignSelf: 'center',
         zIndex: 99,
-        bottom: '5%',
+        bottom: '30%',
         height: '25%',
         filter: 'drop-shadow(0 1px 8px #222)'
     },
