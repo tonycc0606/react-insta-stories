@@ -74,7 +74,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div style={styles.progressText} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
+                             <div style={(i=== currentId)? styles.progressText, styles.progressInactiveText} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
@@ -104,6 +104,13 @@ const styles = {
         width: '100%',
         color: "#ffffff",
         fontSize: "large",
+        marginTop: '10%'
+    },
+    progressInactiveText:{
+        width: '100%',
+        color: "#ffffff",
+        fontSize: "large",
+        fontWeight: "lighter",
         marginTop: '10%'
     }
 }
