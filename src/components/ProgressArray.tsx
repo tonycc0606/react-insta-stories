@@ -112,6 +112,9 @@ const styles = {
         color: "#ffffff",
         fontSize: "large",
         fontWeight: "lighter",
-        marginTop: '10%'
+        marginTop: '10%',
+        '&:hover': {
+             fontWeight: "normal"
+        }
     }
 }
