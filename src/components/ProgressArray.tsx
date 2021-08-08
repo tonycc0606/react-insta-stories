@@ -114,7 +114,7 @@ const styles = {
         fontWeight: "lighter",
         marginTop: '10%',
         '&:hover': {
-             fontWeight: "normal"
+             fontWeight: "normal!important"
         }
     }
 }
