@@ -105,16 +105,16 @@ const styles = {
         width: '100%',
         color: "#ffffff",
         fontSize: "large",
+        fontWeight: "bold",
         marginTop: '10%'
     },
     progressInactiveText:{
         width: '100%',
         color: "#ffffff",
         fontSize: "large",
-        fontWeight: "lighter",
         marginTop: '10%',
         '&:hover': {
-             fontWeight: "normal!important"
+             fontWeight: "bold!important"
         }
     }
 }
