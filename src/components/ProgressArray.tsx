@@ -7,6 +7,7 @@ import StoriesContext from './../context/Stories'
 
 export default () => {
     const [count, setCount] = useState<number>(0)
+    const [hover, setHover] = useState(false);
     const { currentId, next, videoDuration, pause } = useContext<ProgressContext>(ProgressCtx)
     const { defaultInterval, onStoryEnd, onStoryStart, onAllStoriesEnd } = useContext<GlobalCtx>(GlobalContext);
     const { stories } = useContext<StoriesContextInterface>(StoriesContext);
@@ -74,7 +75,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div style={(i=== currentId)? styles.progressText: styles.progressInactiveText} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
+                             <div style={(i=== currentId)? styles.progressText: styles.progressInactiveText,...(hover?styles.hover:null)} onMouseEnter={()=>{setHover(true);}} onMouseLeave={()=>{setHover(false);}} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
@@ -112,9 +113,9 @@ const styles = {
         width: '100%',
         color: "#ffffff",
         fontSize: "large",
-        marginTop: '10%',
-        '&:hover': {
-             fontWeight: "bold!important"
-        }
+        marginTop: '10%'
+    },
+    hover:{
+        fontWeight: "bold!important"
     }
 }
