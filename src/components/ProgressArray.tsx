@@ -7,11 +7,12 @@ import StoriesContext from './../context/Stories'
 
 export default () => {
     const [count, setCount] = useState<number>(0)
-    const [hover, setHover] = useState(false);
     const { currentId, next, videoDuration, pause } = useContext<ProgressContext>(ProgressCtx)
     const { defaultInterval, onStoryEnd, onStoryStart, onAllStoriesEnd } = useContext<GlobalCtx>(GlobalContext);
     const { stories } = useContext<StoriesContextInterface>(StoriesContext);
-
+    function changeFontWeight(e) {
+        e.target.style.fontWeight = "bold";
+    }
     useEffect(() => {
         setCount(0)
     }, [currentId, stories])
@@ -75,7 +76,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div style={(i=== currentId)? styles.progressText: progressInactiveText({hover})} onPointerOver={()=>{setHover(true)}} onPointerOut={()=>{setHover(false)}} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
+                             <div style={(i=== currentId)? styles.progressText: styles.progressInactiveText} onPointerOver={changeFontWeight} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
@@ -119,12 +120,4 @@ const styles = {
         fontWeight: "bold!important"
     }
 }
-
-const progressInactiveText = ({hover}) => ({
-        width: '100%',
-        color: "#ffffff",
-        fontSize: "large",
-        marginTop: '10%',
-        fontWeight: hover ? "bold" : "normal"
-})
 
