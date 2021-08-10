@@ -14,7 +14,7 @@ export default () => {
         e.target.style.fontWeight = "bold";
     }
     
-    function changeFontWeight(e) {
+    function resetFontWeight(e) {
         e.target.style.fontWeight = "normal";
     }
     
