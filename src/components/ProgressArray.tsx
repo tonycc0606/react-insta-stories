@@ -75,7 +75,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div style={(i=== currentId)? styles.progressText: styles.progressInactiveText,...(hover?styles.hover:null)} onMouseEnter={()=>{setHover(true);}} onMouseLeave={()=>{setHover(false);}} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
+                             <div style={(i=== currentId)? styles.progressText: styles.progressInactiveText, ...(hover? styles.hover: null)} onMouseEnter={()=>{setHover(true);}} onMouseLeave={()=>{setHover(false);}} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
