@@ -82,7 +82,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div style={(i=== currentId)? ProgressArrayStyles.progressText: ProgressArrayStyles.progressInactiveText} onPointerOver={changeFontWeight} onPointerOut={resetFontWeight} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
+                             <div className={(i=== currentId)? ProgressArrayStyles.progressText: ProgressArrayStyles.progressInactiveText} onPointerOver={changeFontWeight} onPointerOut={resetFontWeight} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
