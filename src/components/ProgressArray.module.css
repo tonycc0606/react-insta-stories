@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px){
+  .progressText {
+        display:none;
+    }
+  
+    .progressInactiveText {
+        display:none;
+    }
+}
+
+.progressText{
+        width: '100%',
+        color: "#ffffff",
+        fontSize: "large",
+        fontWeight: "bold",
+        marginTop: '10%'
+    }
+    
+.progressInactiveText:{
+        width: '100%',
+        color: "#ffffff",
+        fontSize: "large",
+        marginTop: '10%'
+    }
