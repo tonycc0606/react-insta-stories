@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect, useRef } from 'react'
+import ProgressArrayStyles from './ProgressArray.module.css';
 import Progress from './Progress'
 import { ProgressContext, GlobalCtx, StoriesContext as StoriesContextInterface } from './../interfaces'
 import ProgressCtx from './../context/Progress'
@@ -81,7 +82,7 @@ export default () => {
                     width={1 / stories.length}
                     active={i === currentId ? 1 : (i < currentId ? 2 : 0)}
                 />
-                             <div style={(i=== currentId)? styles.progressText: styles.progressInactiveText} onPointerOver={changeFontWeight} onPointerOut={resetFontWeight} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
+                             <div style={(i=== currentId)? ProgressArrayStyles.progressText: ProgressArrayStyles.progressInactiveText} onPointerOver={changeFontWeight} onPointerOut={resetFontWeight} onClick={()=>{window.open(stories[i].header.subheading,'_blank')}}>{stories[i].header.heading}</div>
                              </div>
                              )}
         </div>
