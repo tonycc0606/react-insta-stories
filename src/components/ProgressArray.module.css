@@ -9,16 +9,16 @@
 }
 
 .progressText{
-        width: '100%';
-        color: "#ffffff";
-        fontSize: "large";
-        fontWeight: "bold";
-        marginTop: '10%';
+        width: 100%;
+        color: #ffffff;
+        font-size: large;
+        font-weight: bold;
+        margin-top: 10%;
     }
     
 .progressInactiveText{
-        width: '100%';
-        color: "#ffffff";
-        fontSize: "large";
-        marginTop: '10%';
+        width: 100%;
+        color: #ffffff;
+        font-size: large;
+        margin-top: 10%;
     }
