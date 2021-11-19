@@ -98,7 +98,7 @@ const styles = {
         position: 'relative',
         width: '100%',
         alignSelf: 'center',
-        zIndex: 99,
+        zIndex: 2,
         bottom: '27%',
         height: '25%',
         filter: 'drop-shadow(0 1px 8px #222)'
